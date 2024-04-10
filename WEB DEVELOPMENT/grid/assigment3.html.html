@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            width: fit-content;
+            border: 1px solid;
+            background-color: rgb(224, 129, 224);
+            grid-template-rows: 200px 200px 100px;
+            grid-template-columns:repeat(3,200px);
+            grid-template-areas:
+            "d d f"
+            "a e f";
+        }
+        #parent > .child{
+            border: 2px solid;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+         #parent>.child:nth-child(1) {
+            background-color: rgb(52, 3, 245);
+            grid-area: a;
+        }
+        
+        #parent>.child:nth-child(4) {
+            background-color: orangered;
+            grid-area: d;
+        }
+        #parent>.child:nth-child(5) {
+            background-color: brown;
+            grid-area: e;
+        }
+        #parent>.child:nth-child(6) {
+            background-color: rgb(128, 124, 0);
+            grid-area: f;
+        }
+        #parent>.child:nth-child(2) {
+            border: none;
+        
+        }
+        #parent>.child:nth-child(3) {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child">1</div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grandparent{
+            border: 1px solid;
+            background-color: rgb(144, 243, 243);
+        }
+        #parent{
+            display: grid;
+            grid-template-columns: repeat(12,80px);
+            grid-template-rows: repeat(5,20px);
+            gap: 10px;
+            margin: 80px;
+            padding: 25px 25px 25px 14px;
+            background-color:rgb(71, 71, 71);
+            box-shadow: rgb(34, 15, 15) 5px 5px 5px 5px;
+            grid-template-areas: 
+            "a b c d e f g h i j k l"
+            "m n o p q r s t u v w x"
+            "y z aa bb cc dd ee ff gg hh ii ii"
+            "jj kk ll mm nn oo pp qq rr ss tt tt"
+            "uu vv ww xx yy yy yy yy zz abc def ghi";
+        }
+        .type1{
+            
+            display: flex;
+            justify-content: center;
+            color: rgb(1, 1, 116);
+            box-shadow: rgb(34, 15, 15) 1px 1px 1px 1px;
+        }
+        #parent > div:nth-child(1){
+            grid-area: a;
+        }
+        #parent > div:nth-child(2){
+            grid-area: b;
+        }
+        #parent > div:nth-child(3){
+            grid-area: c;
+        }
+        #parent > div:nth-child(4){
+            grid-area: d;
+        }
+        #parent > div:nth-child(5){
+            grid-area: e;
+        }
+        #parent > div:nth-child(6){
+            grid-area: f;
+        }
+        #parent > div:nth-child(7){
+            grid-area: g;
+        }
+        #parent > div:nth-child(8){
+            grid-area:h;
+        }
+        #parent > div:nth-child(9){
+            grid-area: i;
+        }
+        #parent > div:nth-child(10){
+            grid-area: j;
+        }
+        #parent > div:nth-child(11){
+            grid-area: k;
+        }
+        #parent > div:nth-child(12){
+            grid-area: l;
+        }
+        #parent > div:nth-child(13){
+            grid-area: m;
+        }
+        #parent > div:nth-child(14){
+            grid-area: n;
+        }
+        #parent > div:nth-child(15){
+            grid-area: o;
+        }
+        #parent > div:nth-child(16){
+            grid-area: p;
+        }
+        #parent > div:nth-child(17){
+            grid-area: q;
+        }
+        #parent > div:nth-child(18){
+            grid-area: r;
+        }
+        #parent > div:nth-child(19){
+            grid-area: s;
+        }
+        #parent > div:nth-child(20){
+            grid-area: t;
+        }
+        #parent > div:nth-child(21){
+            grid-area: u;
+        }
+        #parent > div:nth-child(22){
+            grid-area: v;
+        }
+        #parent > div:nth-child(23){
+            grid-area: w;
+        }
+        #parent > div:nth-child(24){
+            grid-area: x;
+        }
+        #parent > div:nth-child(25){
+            grid-area: y;
+        }
+        #parent > div:nth-child(26){
+            grid-area: z;
+        }
+        #parent > div:nth-child(27){
+            grid-area: aa;
+        }
+        #parent > div:nth-child(28){
+            grid-area: bb;
+        }
+        #parent > div:nth-child(29){
+            grid-area: cc;
+        }
+        #parent > div:nth-child(30){
+            grid-area: dd;
+        }
+        #parent > div:nth-child(31){
+            grid-area: ee;
+        }
+        #parent > div:nth-child(32){
+            grid-area: ff;
+        }
+        #parent > div:nth-child(33){
+            grid-area: gg;
+        }
+        #parent > div:nth-child(34){
+            grid-area: hh;
+        }
+        #parent > div:nth-child(35){
+            grid-area: ii;
+        }
+        #parent > div:nth-child(36){
+            grid-area: jj;
+        }
+        #parent > div:nth-child(37){
+            grid-area: kk;
+        }
+        #parent > div:nth-child(38){
+            grid-area: ll;
+        }
+        #parent > div:nth-child(39){
+            grid-area: mm;
+        }
+        #parent > div:nth-child(40){
+            grid-area: nn;
+        }
+        #parent > div:nth-child(41){
+            grid-area: oo;
+        }
+        #parent > div:nth-child(42){
+            grid-area: pp;
+        }
+        #parent > div:nth-child(43){
+            grid-area: qq;
+        }
+        #parent > div:nth-child(44){
+            grid-area: rr;
+        }
+        #parent > div:nth-child(45){
+            grid-area: ss;
+        }
+        #parent > div:nth-child(46){
+            grid-area: tt;
+        }
+        #parent > div:nth-child(47){
+            grid-area: uu;
+        }
+        #parent > div:nth-child(48){
+            grid-area: vv;
+        }
+        #parent > div:nth-child(49){
+            grid-area: ww;
+        }
+        #parent > div:nth-child(50){
+            grid-area: xx;
+        }
+        #parent > div:nth-child(51){
+            grid-area: yy;
+        }
+        #parent > div:nth-child(52){
+            grid-area: zz;
+        }
+        #parent > div:nth-child(53){
+            grid-area: abc;
+        }
+        #parent > div:nth-child(54){
+            grid-area: def;
+        }
+        #parent > div:nth-child(55){
+            grid-area: ghi;
+        }
+    </style>
+</head>
+<body>
+    <div id="grandparent">
+        <div id="parent">
+            <div class="type1">~</div>
+            <div class="type1">1</div>
+            <div class="type1">2</div>
+            <div class="type1">3</div>
+            <div class="type1">4</div>
+            <div class="type1">5</div>
+            <div class="type1">6</div>
+            <div class="type1">7</div>
+            <div class="type1">8</div>
+            <div class="type1">9</div>
+            <div class="type1">0</div>
+            <div class="type1">delete</div>
+            <div class="type1">tab</div>
+            <div class="type1">Q</div>
+            <div class="type1">W</div>
+            <div class="type1">E</div>
+            <div class="type1">R</div>
+            <div class="type1">T</div>
+            <div class="type1">Y</div>
+            <div class="type1">U</div>
+            <div class="type1">I</div>
+            <div class="type1">O</div>
+            <div class="type1">P</div>
+            <div class="type1">/</div>
+            <div class="type1">caps</div>
+            <div class="type1">A</div>
+            <div class="type1">S</div>
+            <div class="type1">D</div>
+            <div class="type1">F</div>
+            <div class="type1">G</div>
+            <div class="type1">H</div>
+            <div class="type1">J</div>
+            <div class="type1">K</div>
+            <div class="type1">L</div>
+            <div class="type1">Enter</div>
+            <div class="type1">Shift</div>
+            <div class="type1">Z</div>
+            <div class="type1">X</div>
+            <div class="type1">C</div>
+            <div class="type1">V</div>
+            <div class="type1">B</div>
+            <div class="type1">N</div>
+            <div class="type1">M</div>
+            <div class="type1"><</div>
+            <div class="type1">></div>
+            <div class="type1">SHIFT</div>
+            <div class="type1">🌐</div>
+            <div class="type1">control</div>
+            <div class="type1">option</div>
+            <div class="type1">alt</div>
+            <div class="type1">space</div>
+            <div class="type1">alt</div>
+            <div class="type1">option</div>
+            <div class="type1"><-</div>
+            <div class="type1">-></div>
+        </div>
+    </div>
+</body>
+</html>

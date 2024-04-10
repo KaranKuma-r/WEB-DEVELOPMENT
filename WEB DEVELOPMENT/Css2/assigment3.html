@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: transparent;
+            background: linear-gradient(blue,red,green,rgb(0, 140, 255),hotpink);
+            background-clip: text ;
+            text-align: center;
+            
+        }
+        .type>div:hover{
+            opacity: 0.5;
+        }
+        .type{
+            display: flex;
+            justify-content: center;
+            width:1000px;
+            height: 500px;
+            margin: auto;
+            padding-top: 40px;
+            gap: 70px;
+
+
+        }
+        #type1{ 
+            background-color:yellow;
+            width: 100px;
+            height: 150px;
+        }
+        #type2{
+        
+            background-color: rgb(239, 7, 193);
+            width: 100px;
+            height: 150px;
+        }
+        #type3{
+            background-color:red;
+            width: 100px;
+            height: 150px;
+        }
+        #type4{
+            background-color:green;
+            width: 100px;
+            height: 150px;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>CARDS</h1>
+   <div class="type">
+    <div id="type1"></div>
+    <div id="type2"></div>
+    <div id="type3"></div>
+    <div id="type4"></div>
+   </div>
+
+</body>
+</html>

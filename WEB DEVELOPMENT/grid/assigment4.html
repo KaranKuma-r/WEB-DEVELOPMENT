@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(4,100px);
+            grid-template-rows: repeat(3,100px);
+            grid-template-areas: 
+            "a a b b"
+            "c d d d"
+            "e e e e";
+        }
+        .child{
+            border: 1px solid;
+            border: none;
+            border-radius: 10px ;
+        }
+        .child{
+            color: antiquewhite;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        
+        }
+        #parent>.child:nth-child(1) {
+            grid-area: a;
+            background-color: black;
+            color: antiquewhite;
+        }
+        #parent>.child:nth-child(2) {
+            grid-area: b;
+            background-color: black;
+            color: antiquewhite;
+
+        }
+        #parent>.child:nth-child(3) {
+            grid-area: c;
+            background-color: black;
+            color: antiquewhite;
+        }
+        #parent>.child:nth-child(4) {
+            grid-area: d;
+            background-color: black;
+            color: antiquewhite;
+        }
+        #parent>.child:nth-child(5) {
+            grid-area: e;
+            background-color: black;
+            color: antiquewhite;
+        }
+        #parent>.child:nth-child(6) {
+            grid-area: f;
+        }
+        #parent>.child:nth-child(7) {
+            grid-area: g;
+        }
+        #parent>.child:nth-child(8) {
+            grid-area: h;
+        }
+        #parent>.child:nth-child(9) {
+            grid-area: i;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child">A</div>
+        <div class="child">B</div>
+        <div class="child">C</div>
+        <div class="child">D</div>
+        <div class="child">E</div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>

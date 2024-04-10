@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 70%;
+           height: 100vh;
+          background: linear-gradient(to top left, red,green,blue,yellow,gold,hotpink);
+            /* text-align: center; */
+            
+        }
+        h1{
+            margin: 4% 13% 0% 57%;
+            /* text-align: center; */
+        }
+       
+        form{
+            border-radius: 10px;
+            background-color: rgb(209, 227, 234);
+           /* margin: auto; */
+           margin: 5% 50% 5% 50%;
+
+            width: 320px;
+            height: 430px;
+            border: 2px solid ;
+            padding: 2%;
+        }
+        fieldset{
+            border: none;
+        }
+        button{
+           margin: 0% 40% 0% 35%;
+           background-color: rgb(45, 75, 1);
+           color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form>
+       <b>Feedback Type:</b>
+       <br>
+      <select>
+        <option value="compliment">compliment</option>
+        <option value="suggestion">Suggestion</option>
+        <option value="complaint">Complaint</option>
+      </select>
+      <br>
+      <b>Messsage:</b><br>
+      <textarea  cols="30" rows="5"></textarea>
+      <br>
+      <fieldset>
+       <legend><b>Website Rating:</b></legend>
+       <input type="radio" name="Website Rating">Excellent</lab>
+       <lab><input type="radio" name="Website Rating">Good</lab>
+       <lab><input type="radio" name="Website Rating">Average</lab>
+       <lab><input type="radio" name="Website Rating">Poor</lab>
+      </fieldset><br>
+      <label><b>Age (10-100):</b></label><br>
+      <input type="number (10-100)"><br>
+      <label><b>Email *:</b></label><br>
+      <input type="email"><br>
+      <label><b>Password (min.8 characters):</b></label><br>
+      <input type="text"><br>
+      <label><b>Website URL (optional):</b></label><br>
+      <input type="text"><br>
+      <label><input type="checkbox">I agree terms and condition</label><br>
+      <button>Submit</button>
+
+
+
+    </form>
+</body>
+</html>

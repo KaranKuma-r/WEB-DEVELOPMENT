@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: aliceblue;
+        }
+        p{
+            cursor: pointer;
+        }
+
+        #main {
+            display: none;
+        }
+
+        footer {
+            background: black;
+            display: flex;
+            width: 100%;
+        }
+
+        footer>div {
+            display: flex;
+            gap: 25px;
+        }
+
+        #parent>div:nth-child(1) {
+            grid-area: a;
+        }
+
+        #parent>div:nth-child(2) {
+            grid-area: b;
+        }
+
+        #parent>div:nth-child(3) {
+            grid-area: c;
+        }
+
+        #parent>div:nth-child(4) {
+            grid-area: d;
+        }
+
+        #parent>div:nth-child(5) {
+            grid-area: e;
+        }
+
+        #parent {
+            display: grid;
+            grid-template-areas:
+                "a a a b c d e"
+                "a a a b c d e"
+                "a a a b c d e"
+                "a a a b c d e"
+                "a a a b c d e"
+                "a a a b c d e"
+                "a a a b c d e"
+                "a a a b c d e"
+            ;
+        }
+
+        #logo{
+
+            padding:60px ;
+
+        }
+
+        #parent>div:nth-child(1) {
+            background-color: darkblue;
+        }
+
+        .items {
+            text-align: center;
+            background: #3140af;
+        }
+
+        /* for tab */
+        @media screen and (min-width:501px) and (max-width:1024px) {
+            #parent {
+                display: grid;
+                grid-template-areas:
+                    "b c d e"
+                    "b c d e"
+                    "b c d e"
+                    "b c d e"
+                    "b c d e"
+                    "b c d e"
+                    "b c d e"
+                    "b c d e"
+                    "a a a a"
+                    "a a a a"
+                    "a a a a"
+                    "a a a a"
+                ;
+            }
+        }
+
+        #main {
+            display: none;
+        }
+
+        #image {
+            text-align: center;
+            height: 250px;
+        }
+
+        footer {
+            background: black;
+            color: aliceblue;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+        /* for mob*/
+
+        @media screen and (min-width:200px) and (max-width:500px) {
+
+            #parent {
+                display: none;
+            }
+
+            #image{
+                background-color: darkblue;
+                height: fit-content;
+            }
+            img{
+                padding-bottom: 20px;
+            }
+
+            #main {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .mobile{
+                height: 50px;
+                color: white;
+                background: #3140af;
+            }
+
+            footer{
+                gap: 10px;
+                justify-content: space-evenly;
+            }
+            .foot1{
+                display: none;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div>
+            <div id="image"><img
+                    src="https://www.adobe.com/express/create/media_1c358fd09188cb57214ad51c72abacd8f39112f52.png?width=2000&format=webply&optimize=medium"
+                    alt="logo" width="200px" id="logo"></div>
+        </div>
+        <div class="items">
+            <h3>Shop</h3>
+            <p>Gift Card</p>
+            <p>Etsy Register</p>
+            <p>sitemap</p>
+            <p>Etsy blog</p>
+            <p>Etsy United Kingdom</p>
+            <p>Etsy Germany</p>
+            <p>Etsy Canada</p>
+        </div>
+        <div class="items">
+            <h3>Sell</h3>
+            <p>Gift Card</p>
+            <p>Etsy Register</p>
+            <p>sitemap</p>
+            <p>Etsy blog</p>
+        </div>
+        <div class="items">
+            <h3>About</h3>
+            <p>Gift Card</p>
+            <p>Etsy Register</p>
+            <p>sitemap</p>
+            <p>Etsy blog</p>
+            <p>Etsy United Kingdom</p>
+            <p>Etsy Germany</p>
+            <p>Etsy Canada</p>
+        </div>
+        <div class="items">
+            <h3>Visit</h3>
+            <p>Gift Card</p>
+            <p>Etsy Register</p>
+            <p>sitemap</p>
+            <p>Etsy blog</p>
+            <p>Etsy United Kingdom</p>
+            <p>Etsy Germany</p>
+            <p>Etsy Canada</p>
+        </div>
+    </div>
+    <footer style="text-decoration: underline;">
+        <div class="foot1">
+            <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/188px-Flag_of_India.svg.png "
+                    width="20px">India</p>
+            <p>English(IN)</p>
+            <p>₹(INR)</p>
+        </div>
+        <div class="foot2">
+            <p>©️2024 Etay,Inc.</p>
+            <p>terms of Use</p>
+            <p>Privacy</p>
+            <p>Interest-based ads</p>
+            <p>Local Shops</p>
+            <p>Regions</p>
+        </div>
+    </footer>
+
+
+    <div id="main">
+        <select name="select" class="mobile">
+            <option value="">Shop</option>
+            <option value="">Gift Card</option>
+            <option value="">Etsy Registoption</option>
+            <option value="">sitemap</option>
+            <option value="">Etsy blog</option>
+            <option value="">Etsy Unitedoption</option>
+            <option value="">Etsy Germanoption</option>
+            <option value="">Etsy Canadaoption</option>
+        </select>
+        <select name="select" class="mobile">
+            <option value="">Sell</option>
+            <option value="">Gift Card</option>
+            <option value="">Etsy Registoption</option>
+            <option value="">sitemap</option>
+            <option value="">Etsy blog</option>
+           
+        </select>
+        <select name="select" class="mobile">
+            <option value="">About</option>
+            <option value="">Gift Card</option>
+            <option value="">Etsy Registoption</option>
+            <option value="">sitemap</option>
+            <option value="">Etsy blog</option>
+            <option value="">Etsy Unitedoption</option>
+            <option value="">Etsy Germanoption</option>
+            <option value="">Etsy Canadaoption</option>
+        </select>
+        <select name="select" class="mobile">
+            <option value="">Visit</option>
+            <option value="">Gift Card</option>
+            <option value="">Etsy Registoption</option>
+            <option value="">sitemap</option>
+            <option value="">Etsy blog</option>
+            <option value="">Etsy Unitedoption</option>
+            <option value="">Etsy Germanoption</option>
+            <option value="">Etsy Canadaoption</option>
+        </select>
+        <select name="select" class="mobile" id="rm">
+            <option value="">Contact</option>
+        </select>
+        <select name="select" class="mobile" id="rm">
+            <option value="">Courses</option>
+        </select>
+        <div id="image"><img
+                src="https://www.adobe.com/express/create/media_1c358fd09188cb57214ad51c72abacd8f39112f52.png?width=2000&format=webply&optimize=medium"
+                alt="logo" width="200px"></div>
+
+    </div>
+
+</body>
+
+</html>
