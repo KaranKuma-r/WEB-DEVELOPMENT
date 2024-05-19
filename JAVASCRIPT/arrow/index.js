@@ -358,7 +358,7 @@ const employees = [
 
 // <---------- ----------->
 
-// Destructuring to Swap: Define a function destructuringToSwap that takes an array of employee objects, 'employees', as a parameter.
+// Q.9.Destructuring to Swap: Define a function destructuringToSwap that takes an array of employee objects, 'employees', as a parameter.
 // Use destructuring to swap the values of the first and last employees in the array. Return the modified 'employees' array.
 // Example Invocation:
 
