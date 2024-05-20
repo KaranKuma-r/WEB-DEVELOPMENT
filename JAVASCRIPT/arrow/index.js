@@ -354,7 +354,7 @@ const employees = [
 //     return employe;
 // }
 
-// console.log(highestPaid(employees));
+console.log(highestPaid(employees));
 
 // <---------- ----------->
 
