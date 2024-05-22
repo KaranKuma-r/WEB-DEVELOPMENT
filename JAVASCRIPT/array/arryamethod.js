@@ -146,6 +146,70 @@
 // // Expected output: Array ["camel", "duck"]
 
 // console.log(animals.slice());
-// // Expected output: Array ["ant", "bison
+// // Expected output: Array ["ant", "bison, 'camel', 'duck', 'elephant'];
 
-// 7.INDEXOF() METHOD =
+// 7.INDEXOF() METHOD = The indexOf() method returns the first index at which a given element can be found in an array, or -1 if it is not present. It's like finding the position of a specific item in a grocery list.
+// EXAMPLE 
+// let fruits = ['apple', 'banana', 'orange'];
+// let indexOfBanana = fruits.indexOf('orange');
+// console.log(indexOfBanana); // Output: 2
+
+// 8. includes method =The includes() method checks if an array includes a certain element and returns true or false. It's like checking if a specific ingredient exists in a recipe.
+//  EXAMPLE 
+// let fruits = ['apple', 'banana', 'orange'];
+// console.log(fruits.includes('apple')); // Output: true
+
+// 9. JOIN METHODS =The join() method joins all elements of an array into a string, using a specified separator. It's like creating a comma-separated list from a list of items.[AND ITS LIKE A SPREAD OPERATOR BUT IN SPREAD WE CANT COMMA,AND SYMBOL LIST FROM BUT HERE WE CAN DO]
+// EXAMPLLE
+// let a =[1,2,3,4]
+// console.log(a.join('-'))
+
+// 10.REVERSE METHOD=The reverse() method reverses the order of the elements in an array. It's like flipping a deck of cards.
+// EXAMPLLE
+// let a =[1,2,3,4]
+// console.log(a.reverse('-'))
+
+
+// <--------------- IMPORTANT NOTES FOR PALLINDROMES----------------->
+// EXAMPLES
+// let a=[1,2,3,4,5]
+// b =a.reverse();
+// console.log(a.join(""),b.join(""))
+// console.log(a==b)
+
+// when we use revserse it modify the original aaray that should we first do before reverse create copy of the array by using slice method.
+// let str="karan"
+// let a =str.split("")
+// console.log(a)
+// let b=a.slice()
+// console.log(b)
+// b.reverse()
+// console.log(a,b)
+// console.log(a==b)
+
+// 11.SPLICE METHOD=The splice() method changes the contents of an array by removing, replacing, or adding elements. It takes three parameters: the start index, the number of elements to remove, and optional elements to add. It's like modifying a specific portion of an array.
+
+// splice(start)
+// splice(start, deleteCount)
+// splice(start, deleteCount, item1)
+// splice(start, deleteCount, item1, item2)
+// splice(start, deleteCount, item1, item2, /* …, */ itemN)
+
+// let fruits = ['apple', 'banana', 'orange', 'grape'];
+// fruits.splice(2);
+// console.log(fruits);
+
+//IMPAORTANT:
+// let arr=[11,12,3,4,5,6]
+// let t =arr.splice(0,2,100)
+// arr=[...arr,...t]
+// console.log(arr)
+
+// push add the last==unshift add at the first == splice add any where in the array element
+
+// 
+
+
+
+
+
