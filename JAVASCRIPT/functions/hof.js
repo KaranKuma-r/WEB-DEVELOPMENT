@@ -171,6 +171,6 @@
 
 // CHANING
 
-// let arr = [1, 2, 3, 4,5]
+// let arr = [1, 2, 3, 4,5];
 // let filter=arr.filter((ele)=>ele%2===0).map((ele)=>ele*2).reduce((acc,curr)=>acc+curr,0)
 // console.log(filter)

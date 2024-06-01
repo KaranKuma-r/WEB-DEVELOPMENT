@@ -208,6 +208,13 @@
 // push add the last==unshift add at the first == splice add any where in the array element
 
 // 
+let str =["radar", "hello", "madam", "world", "level"]
+let store;
+for(let i =0;i<str.length-1;i++){
+  if(str.reverse()==str){
+   store++
+  }
+}console.log(store)
 
 
 
